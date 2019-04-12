@@ -1,0 +1,55 @@
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+
+
+int main()
+{
+	
+	string Months[]={"January","February","March","April","May","June","July","August","September","October","November","December"};
+	
+	int m,d,y;
+	
+	cout << "Please Input the following dates\n";
+
+	cout<< "Months(mm)\n";
+	cin >> m;
+	
+	cout << "Day (dd) \n";
+	cin >> d;
+	
+	cout << "Year (yyy) \n";
+	cin >> y;
+	
+	
+	
+   
+	
+	if (m>12) {
+		cout << "Invalid Month / ";
+	}
+	
+	if (d > 31) {
+		cout << "Invalid day";
+	}
+	
+	
+
+	
+	else if ( m == 12 || 0< m <12 && d == 31 || 0 < d < 31) {
+		
+		
+		cout << m<< "/"<< d << "/" << y<< "\n"<< endl;
+		
+		cout << "Month: "<< Months[m-1] <<endl;
+		cout << "Day: "<< d <<endl;
+		cout << "Year: "<< y <<endl;
+		
+	}
+
+	return 0;
+	
+}
+
